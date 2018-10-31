@@ -603,7 +603,7 @@ type postNotification struct {
 }
 
 // Returns the name of the channel for this notification. For direct messages, this is the sender's name
-// preceeded by an at sign. For group messages, this is a comma-separated list of the members of the
+// preceded by an at sign. For group messages, this is a comma-separated list of the members of the
 // channel, with an option to exclude the recipient of the message from that list.
 func (n *postNotification) GetChannelName(userNameFormat string, excludeId string) string {
 	switch n.channel.Type {
